@@ -1,4 +1,4 @@
-#Laravel Domain Validation
+# Laravel Domain Validation
 
 A domain validator rule for Laravel 6.x and higher.
 
