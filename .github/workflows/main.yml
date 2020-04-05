@@ -13,6 +13,7 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: PHPUnit tests
-      uses: graychen/phpunit-action@v1.0.0
+      uses: php-actions/phpunit@v1
       with:
         config: phpunit.xml
+        memory: 256M
