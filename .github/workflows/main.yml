@@ -11,6 +11,12 @@ jobs:
     
     steps:
     - uses: actions/checkout@v2
-
-    - name: PHPUnit tests
+    
+    - name: Install composer
+      uses: php-actions/composer@v1
+      
+    - name: Run PHPUnit
       uses: php-actions/phpunit@v1
+      with:
+        config: ./phpunit.xml
+        memory: 256M
