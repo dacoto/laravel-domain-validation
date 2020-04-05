@@ -4,7 +4,7 @@
     "type": "library",
     "require": {
         "php": "^7.2",
-        "illuminate/validation": "^6.0"
+        "illuminate/validation": "^6.0|^7.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^8.5"
