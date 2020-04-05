@@ -1,0 +1,24 @@
+{
+    "name": "dacoto/laravel-domain-validation",
+    "description": "A domain validator rule for Laravel",
+    "type": "library",
+    "require": {
+        "php": "^7.2",
+        "illuminate/validation": "^6.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "dacoto\\DomainValidator\\": "src/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "David Cortés",
+            "email": "dacoto97@hotmail.com"
+        }
+    ]
+}
