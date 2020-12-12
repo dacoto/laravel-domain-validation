@@ -17,7 +17,7 @@ class LaravelDomainValidationServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot()
+    public function boot(): void
     {
         Validator::extend('domain', Domain::class);
     }

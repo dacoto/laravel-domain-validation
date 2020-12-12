@@ -16,15 +16,19 @@ class DomainTest extends TestCase
         $this->validator = new Domain();
     }
 
-    public function testPasses()
+    public function testPasses(): void
     {
-        $this->assertTrue($this->validator->passes('domain', 'dacoto.com'));
-        $this->assertTrue($this->validator->passes('domain', 'www.dacoto.com'));
+        self::assertTrue($this->validator->passes('domain', 'dacoto.com'));
+        self::assertTrue($this->validator->passes('domain', 'www.dacoto.com'));
     }
 
-    public function testFails()
+    public function testFails(): void
     {
-        $this->assertFalse($this->validator->passes('domain', 'https://dacoto.com'));
-        $this->assertFalse($this->validator->passes('domain', 'https://www.dacoto.com'));
+        self::assertFalse($this->validator->passes('domain', '.'));
+        self::assertFalse($this->validator->passes('domain', 'empty'));
+        self::assertFalse($this->validator->passes('domain', 'empty.'));
+        self::assertFalse($this->validator->passes('domain', '.empty'));
+        self::assertFalse($this->validator->passes('domain', 'https://dacoto.com'));
+        self::assertFalse($this->validator->passes('domain', 'https://www.dacoto.com'));
     }
 }
