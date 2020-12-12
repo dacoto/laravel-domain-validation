@@ -1,6 +1,6 @@
 name: CI
 
-on: [push]
+on: [ push ]
 
 jobs:
   build:
@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Install composer
-        uses: php-actions/composer@v1
+        uses: php-actions/composer@v4
 
       - name: Run PHPUnit
         uses: php-actions/phpunit@v9
