@@ -23,7 +23,7 @@ class Domain implements Rule
             return true;
         }
 
-        return (bool) preg_match('/^(?:[a-z0-9](?:[a-z0-9-æøå]{0,61}[a-z0-9])?\.)+.[a-z0-9][a-z0-9-]{0,61}[a-z0-9]$/isu', $value);
+        return (bool) preg_match('/^(?:[a-z0-9](?:[a-z0-9-æøå]{0,61}[a-z0-9])?\.)+[a-z0-9][a-z0-9-]{0,61}[a-z0-9]$/isu', $value);
     }
 
     /**
