@@ -20,6 +20,7 @@ class DomainTest extends TestCase
     {
         self::assertTrue($this->validator->passes('domain', 'dacoto.com'));
         self::assertTrue($this->validator->passes('domain', 'www.dacoto.com'));
+        self::assertTrue($this->validator->passes('domain', 'hello.world.io'));        
     }
 
     public function testFails(): void
