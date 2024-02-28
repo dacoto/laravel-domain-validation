@@ -4,7 +4,7 @@
 ![GitHub](https://img.shields.io/github/license/dacoto/laravel-domain-validation)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/dacoto/laravel-domain-validation)
 
-A domain validator rule for Laravel 8.x and higher.
+A domain validator rule for Laravel 10.x and higher.
 
 ## Usage
 
