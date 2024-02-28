@@ -6,7 +6,7 @@ use PHPUnit\Framework\TestCase;
 /**
  * Class DomainTest
  */
-class DomainTest extends TestCase
+final class DomainTest extends TestCase
 {
     /** @var Domain */
     private $validator;
