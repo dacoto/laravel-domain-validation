@@ -37,7 +37,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          composer require "illuminate/validation:${{ matrix.laravel }}" --no-interaction --no-update
+          composer require "illuminate/validation:${{ matrix.laravel }}" --no-interaction --no-update --prefer-lowest
           composer update --prefer-dist --no-interaction
 
       - name: Run PHPUnit
