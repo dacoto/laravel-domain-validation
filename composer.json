@@ -20,5 +20,7 @@
             "name": "David Cortés",
             "email": "cortestoledanodavid@gmail.com"
         }
-    ]
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
